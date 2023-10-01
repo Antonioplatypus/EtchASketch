@@ -1,0 +1,9 @@
+.grid {display: flex;}
+
+.column { flex:1;}
+
+.cell {
+    width: 119px;
+    height: 50px;
+    text-align: center;
+}
