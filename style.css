@@ -1,9 +1,22 @@
 .grid {display: flex;}
 
-.column { flex:1;}
+.column { flex:1; width:0px; height:0px;}
 
 .cell {
     width: 119px;
     height: 50px;
     text-align: center;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 25px;
+}
+
+button {
+     width: 150px; height: 50px; border-style: solid; border-color:black; border-radius: 6px; font-weight: 700;
+}
+
+#colorBlack { background-color: black; color: white;} #colorWhite {background-color: white; color:black;} #colorRed {background-color: red; color: black;} #colorBlue {background-color: blue; color: black;} #colorPurple{background-color: purple; color: black;}
