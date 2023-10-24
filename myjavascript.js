@@ -17,14 +17,13 @@ if(gridCreated != 0){ removeAllChildNodes(gridContainer); gridCreated = 0; }
 var grid = document.createElement('div');            // creates grid
 grid.className = 'grid';
 if (gridSize>100) gridSize = 64;
-if (gridSize<1) gridsize = 64;
+if (gridSize<=1) gridSize = 4;
 for (var i = 0; i < gridSize; ++i) {
     var column = document.createElement('div');      // creates column
     column.className = 'column';
         for (var j = 0; j < gridSize; ++j) {
             var cell = document.createElement('div');    // creates cell
-            cell.className = 'cell';
-            cell.textContent = "cell";                   // sets text in cell
+            cell.className = 'cell';                  // sets text in cell
             column.appendChild(cell);                    // appends cell to column (as row)
         }
     grid.appendChild(column);                        // appends column to grid

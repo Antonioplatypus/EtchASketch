@@ -1,10 +1,18 @@
+body{
+  -ms-overflow-style: hidden;
+  scrollbar-width: hidden;
+  overflow-y: hidden; 
+  overflow-x: hidden;
+}
+
+
 .grid {display: flex; margin:0;}
 
 .column { flex:1; width:0px; height:0px; margin: 0;}
 
 .cell {
     margin:0;
-    width: 50px;
+    max-width: 1000px;
     height: 50px;
     text-align: center;
 }
@@ -14,7 +22,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 25px;
+    margin: 25px 25px 25px 1px;
+    width: 100%;
 }
 
 button {
@@ -25,5 +34,5 @@ button {
 #gridSize { display: block;
     margin-left: auto;
     margin-right: auto;
-margin-bottom: 20px; }
+    margin-bottom: 20px; }
 
